@@ -101,6 +101,23 @@ if "resume" in st.session_state and "jobtitle" in st.session_state:
     pdf.output(pdf_path)
 
     with open(pdf_path, "rb") as f:
-        st.download_button("📥 Download ATS Ready Resume (PDF)", f, file_name="ATS_Optimized_Resume.pdf")
+        st.markdown("""
+        <style>
+        body {
+            background-color: white;
+        }
+        .stDownloadButton button {
+            background-color: #f9d342;
+            color: black;
+            font-weight: bold;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        </style>
+    """, unsafe_allow_html=True)
+st.download_button("📥 Download ATS Ready Resume (PDF)", f, file_name="ATS_Optimized_Resume.pdf")
 else:
     st.warning("Please complete previous steps.")
+
+st.markdown("[← Back to Home](../Home.py)", unsafe_allow_html=True)

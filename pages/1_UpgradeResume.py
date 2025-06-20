@@ -1,6 +1,19 @@
 import streamlit as st
 
 st.set_page_config(page_title="Upgrade Resume", layout="centered")
+st.markdown("""
+        <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1607746882042-944635dfe10e?fit=crop&w=1500&q=80');
+            background-size: cover;
+        }
+        .block-container {
+            background-color: rgba(255, 255, 255, 0.92);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+        </style>
+    """, unsafe_allow_html=True)
 st.title("🔁 Upgrade Resume")
 
 with st.form("upgrade_form"):

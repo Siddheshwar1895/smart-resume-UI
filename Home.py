@@ -12,7 +12,7 @@ st.set_page_config(page_title='ATS Checker', layout='centered')
 page_bg_img = '''
 <style>
 body {
-background-image: url("https://images.unsplash.com/photo-1603791440384-56cd371ee9a7");
+background-image: url('https://images.unsplash.com/photo-1605902711622-cfb43c4437d5?fit=crop&w=1500&q=80');
 background-size: cover;
 }
 .block-container {
